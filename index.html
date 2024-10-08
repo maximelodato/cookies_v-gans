@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recette des Cookies Végans</title>
+</head>
+<body>
+    <h1>Créer une recette de Cookies Végans</h1>
+    
+    <section>
+        <h2>Ajouter un ingrédient</h2>
+        <input type="number" id="ingredient-quantity" placeholder="Quantité" required>
+        <input type="text" id="ingredient-unit" placeholder="Unité" required>
+        <input type="text" id="ingredient-name" placeholder="Ingrédient" required>
+        <select id="ingredient-type">
+            <option value="sec">Sec</option>
+            <option value="humide">Humide</option>
+        </select>
+        <button id="addIngredient" aria-label="Ajouter un ingrédient">Ajouter Ingrédient</button>
+    </section>
+
+    <section>
+        <h2>Ajouter une étape</h2>
+        <textarea id="instruction" placeholder="Entrez l'étape ici" required></textarea>
+        <button id="addInstruction" aria-label="Ajouter une étape">Ajouter Étape</button>
+    </section>
+
+    <h2>Recette</h2>
+    <div id="recipe"></div>
+
+    <button id="showRecipe" aria-label="Afficher la recette">Afficher Recette</button>
+
+    <section>
+        <h2>Créer une nouvelle recette</h2>
+        <input type="text" id="newTitle" placeholder="Titre de la recette" required />
+        <button id="createRecipe" aria-label="Créer une nouvelle recette">Créer Recette</button>
+    </section>
+
+    <h2>Recettes Créées</h2>
+    <div id="createdRecipes"></div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

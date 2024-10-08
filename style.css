@@ -1,0 +1,82 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Conteneur principal */
+div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Formulaires */
+input[type="text"], input[type="number"], textarea, select {
+    width: calc(100% - 22px); /* Enlever la marge pour un remplissage parfait */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pour inclure padding et border dans la largeur totale */
+}
+
+button {
+    background-color: #28a745; /* Couleur verte */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Couleur plus sombre au survol */
+}
+
+/* Sections pour afficher ingrédients et étapes */
+h2 {
+    margin-top: 20px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #555; /* Couleur des ingrédients et étapes */
+}
+
+/* Style pour le bouton d'affichage de recette */
+#showRecipe {
+    background-color: #007bff; /* Couleur bleue */
+}
+
+#showRecipe:hover {
+    background-color: #0056b3; /* Couleur plus sombre au survol */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
